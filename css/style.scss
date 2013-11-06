@@ -1,0 +1,1378 @@
+$naranja1: #ff8d3a;
+$naranjaclaro1: #fe9946;
+$naranjaoscuro1: #f06c18;
+$naranjaoscuro2: #d0570a;
+$naranjafondo: #ffefde;
+
+$azul1: #348dc9;
+$azul2: #2e7cb2;
+
+
+$verde1: #86c440;
+$verde2: #7ab13c;
+
+$rojo1: #ce4850;
+$rojo2: #ba4249;
+
+$azul1: #348dc9;
+$azul2: #2e7cb2;
+
+$celeste1: #5abcb3;
+
+
+@mixin transitionall02 {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+@mixin transitionall03 {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+
+body {
+	border-top: 4px solid $naranjaoscuro1;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+h2 {
+	color: $naranja1;
+	font-weight: 600;
+	margin: 0 0 20px 0;
+}
+
+a {
+	cursor: pointer;
+}
+
+* {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
+}
+
+/* -------- HEADER  -------- */
+
+header {
+	width: 100%;
+	background: #ff8d3a;
+	color: white;
+	display: table;
+	margin: 0 !important;
+	padding-top: 20px;
+}
+
+.header-container {
+	text-align: center;
+}
+
+.header-login-container {
+	width: 100%;
+	display: inline-block;
+	margin: 15px 0;
+}
+
+.header-logo {
+	width: 270px;
+	height: 56px;
+	margin: 15px auto 0 auto;
+	margin-bottom: 20px;
+	text-indent: -9999px;
+	background: url(../img/logoTop.png);
+	background-size: 270px auto;
+}
+
+.header-login {
+	width: 100%;
+	background-color: $naranjaclaro1;
+	padding: 15px 0 2px 0;
+
+	p {
+		opacity: 1;
+		color: $naranjaoscuro1;
+		text-transform: uppercase;
+		font-size: 1em;
+		font-weight: 500;
+		letter-spacing: 0px;
+		margin: 6px 0 17px 0;
+
+		.icon_key {
+			display: inline-block;
+			font-size: 1.2em;
+			margin-right: 10px;
+			position: relative;
+			top: 1px;
+		}
+	}
+
+	input:focus, input:active {
+		background-color: #ffebdc;
+	}
+}
+
+.header-help {
+	display: none;
+}
+
+nav {
+	clear: both;
+}
+
+.nav-pills {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 14px;
+}
+
+.nav-pills li {
+	width: 100%;
+	display: block;
+}
+
+#nav-toggle {
+	width: 60px;
+	height: 34px;
+	display: block;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 20px;
+
+	cursor: pointer;
+	color: white;
+	font-size: 3.5em;
+	text-align: center;
+
+	background-color: $naranjaoscuro1;
+
+}
+
+
+/* SLIDER */
+
+@media only screen and (max-width: 468px) {
+	#home-slider {
+		display: none;
+	}
+
+	.home-capacitadores-ubicacion-bloque:first-child {
+	margin-top: 10px;
+	}
+}
+
+
+
+
+/* --------  CAPACITADORES / UBICACIÓN  -------- */
+
+
+.home-capacitadores-ubicacion-bloque {
+	width: 100%;
+	height: 170px;
+	display: inline-block;
+
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 23px;
+
+	padding-top: 30px;
+
+	background-color: $azul1;
+
+	@include transitionall02;
+	
+
+	i {
+		font-size: 4.2em;
+		/*position: relative;
+		top: 36px;*/
+	}
+}
+
+.home-capacitadores-ubicacion-bloque:hover {
+	background-color: $azul2;
+
+	@include transitionall02;
+}
+
+.home-capacitadores-ubicacion-bloque:first-child {
+	margin-bottom: 12px;
+}
+
+.home-capacitadores-ubicacion-bloque p {
+	padding: 0 30px;
+}
+
+
+
+@media only screen and (min-width: 767px) {
+	.header-logo {
+		float: left;
+		margin: 17px auto 0 5.5%;
+	}
+
+	.header-login-container {
+		width: 400px;
+		margin: 0;
+		float: right;
+
+		input {
+			width: 120px;
+		}
+	}
+
+	.nav-pills {
+		width: 100%;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		float: none;
+		background-color: $naranjaoscuro1;
+	}
+
+	.nav-pills li {
+		width: auto;
+		font-size: 1.2em;
+		font-weight: 300;
+		text-align: center;
+		display: inline-block;
+		margin: 0 10px;
+		float: none;
+	}
+
+	.nav-pills > li > a {
+		padding: 20px 26px;
+		margin: 0;
+		border-radius: 0;
+
+		@include transitionall02;
+	}
+
+	.nav-pills > .active > a,
+	.nav-pills > .active > a:hover,
+	.nav-pills > .active > a:focus {
+	  color: white;
+	  background-color: #ff8d3a;
+	  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+	  @include transitionall02;
+	}
+	
+	.header-login-container, .header-help {
+		position: relative;
+		top: -20px;
+	}	
+}
+
+@media only screen and (min-width: 860px) {
+
+	.header-help {
+		width: 76px;
+		height: 80px;
+		display: inline-block;
+		float: right;
+		margin-right: 10px;
+
+		line-height: 15px;
+		text-transform: uppercase;
+		background-color: $naranjaclaro1;
+
+		@include transitionall02;
+
+		span {
+			font-size: 2.2em;
+			position: relative;
+			line-height: 52px;
+		}
+	}
+
+	.header-help:hover {
+		background-color: $naranjaoscuro1;
+		@include transitionall02;
+	}
+}
+
+section#home-ofertacap, section#home-equipo, section#home-noticias {
+	width: 100%;
+	margin: 20px 0;
+	padding: 12px 0;
+}
+
+section#home-ofertacap, section#home-equipo {
+	background-color: $naranjafondo;
+}
+
+/* --------  OFERTA CAPACITACIÓN  -------- */
+
+.verde, .rojo, .azul {
+	color: white;
+}
+
+.verde {
+	background-color: $verde1;
+}
+
+.rojo {
+	background-color: $rojo1;
+}
+
+.azul {
+	background-color: $azul1;
+}
+
+.home-ofertacap-etiquetas {
+	text-align: center;
+	margin: 50px 0 30px 0;
+}
+
+.ofertacap-etiqueta {
+	display: inline-block;
+	padding: 7px 20px;
+	margin: 0 6px 10px 0;
+}
+
+.ofertacap-etiqueta.verde:hover {
+	background-color: $verde2;
+}
+
+.ofertacap-etiqueta.rojo:hover {
+	background-color: $rojo2;
+}
+
+.ofertacap-etiqueta.azul:hover {
+	background-color: $azul2;
+}
+
+@media only screen and (max-width: 400px) {
+	.ofertacap-etiqueta {
+		padding: 7px 14px;
+		font-size: 0.85em;
+	}
+}
+
+/*
+.home-ofertacap-containeritems {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	list-style: none;
+}
+
+.home-ofertacap-containeritems:after,
+.home-ofertacap-item:before {
+    content: '';
+    display: table;
+}
+ 
+.home-ofertacap-containeritems:after {
+    clear: both;
+} */
+
+.home-ofertacap-item {
+	width: 100%;
+	max-width: 340px;
+	min-height: 140px;
+	display: block;
+	margin: 0 0 30px 0;
+	color: white;
+	font-size: 0.9em;
+	/*vertical-align: top;*/
+	position: relative;
+	/*padding-bottom: 51px;*/
+	cursor: pointer;
+	overflow: hidden;
+	
+
+	img {
+		width: 80px !important;
+		height: 80px !important;
+		display: inline-block;
+		float: left;
+	}
+
+	h4 {
+		height: 80px;
+		display: block;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 1.3em;
+		font-weight: bold;
+		line-height: 22px;
+		margin: 0 0 24px 0; 
+
+		a {
+			display: inline-block;
+			max-width: 110px;
+			position: relative;
+			top: 25%;
+		}
+	}
+
+	p {
+		font-weight: 400;
+		line-height: 21px;
+		text-align: left;
+		padding: 0 25px;
+		margin-bottom: 28px;
+	}
+
+	.info {
+		width: 100%;
+		height: 51px;
+		text-align: center;
+		font-weight: 500;
+		text-transform: uppercase;
+		line-height: 50px;
+		position: absolute;
+		bottom: 0px;
+
+		i {
+			font-size: 1.9em;
+			position: relative;
+			top: 5px;
+			padding: 0 7px 0 0;
+		}
+
+		span:first-child {
+			margin-right: 20px;
+		}
+	}
+}
+
+.home-ofertacap-item.rojo .info, li.home-ofertacap-item.rojo>h4 {
+	background-color: $rojo2;
+}
+.home-ofertacap-item.azul .info, li.home-ofertacap-item.azul>h4 {
+	background-color: $azul2;
+}
+.home-ofertacap-item.verde .info, li.home-ofertacap-item.verde>h4 {
+	background-color: $verde2;
+}
+
+@media only screen and (min-width: 599px) {
+	.home-ofertacap-item {
+		width: 240px !important;
+	}
+}
+
+@media only screen and (min-width: 799px) {
+	.home-ofertacap-item {
+		min-height: 570px !important;
+	}
+}
+
+@media only screen and (min-width: 799px) {
+	.home-ofertacap-item {
+		img {
+			width: 240px !important;
+			height: 240px !important;
+			position: relative;
+			float: none;
+		}
+
+		h4 {
+			height: 80px;
+		}
+	}
+}
+
+/* --------  EQUIPO CAPACITADORES  -------- */
+
+#home-equipo-carousel {
+	width: 230px;
+	margin: 40px auto 0 auto;
+}
+
+@media only screen and (min-width: 500px) {
+	#home-equipo-carousel {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+
+.home-equipo {
+	width: 230px !important;
+	height: 391px !important;
+
+	img {
+		display: block;
+	}
+
+	div {
+		width: 100%;
+		height: 61px;
+		background-color: $celeste1;
+
+		p {
+			width: 230px;
+			height: 61px;
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+			color: white;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+	}
+}
+
+.es-navigation {
+	opacity: 0.20;
+}
+.es-navigation:hover {
+	opacity: 0.4;
+}
+
+
+
+
+
+/* --------  ÚLTIMAS NOTICIAS  -------- */
+
+.noticia-home-container {
+	border-left: 4px solid #ffe1c2;
+	background-color: $naranjafondo;
+	padding: 10px 28px 15px 28px;
+	margin-bottom: 30px;
+
+	.fecha {
+		display: block;
+		font-size: 0.8em;
+		color: #8f8f8f;
+		font-style: italic;
+	}
+
+	h4 {
+		color: $naranja1;
+		font-weight: 600;
+	}
+}
+
+.noticia-home-boton {
+	float: right;
+	background-color: $naranja1;
+	padding: 11px 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	position: relative;
+	top: -15px;
+	right: -14px;
+	margin-left: 18px;
+	@include transitionall02;
+}
+
+.noticia-home-boton:hover {
+	background-color: $naranjaoscuro1;
+}
+
+
+
+
+
+/* --------  FOOTER  -------- */
+
+footer {
+	background-color: $naranjaoscuro1;
+	padding: 5px 0 30px 0;
+	color: white;
+	margin-top: 50px;
+}
+
+.footer-logo-container {
+	max-width: 440px;
+}
+
+.logoFooter {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.texto-fehgra {
+	text-align: center;
+	font-size: 1.25em;
+	padding: 0 50px;
+	letter-spacing: -1px;
+	line-height: 24px;
+}
+
+.footer-contacto {
+	display: inline-block;
+	float: right;
+	clear: both;
+	text-align: right;
+	padding: 10px 20px;
+	font-size: 1.1em;
+	background-color: $naranja1;
+	margin-bottom: 10px;
+
+	span {
+		font-size: 1.3em;
+		padding-right: 16px;
+		position: relative;
+		top: 2px;
+	}
+}
+
+.footer-social-container {
+	float: right;
+	margin-top: 30px;
+	a {
+		padding: 15px;
+		background-color: $naranja1;
+		@include transitionall02;
+
+		span {
+			font-size: 1.5em;
+			position: relative;
+			top: 3px;
+			@include transitionall03;
+		}
+	}
+
+	a:hover {
+		background-color: $naranjafondo;
+
+		span{
+			color: $naranjaoscuro1;
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	footer .span6{
+		width: 100%;
+		max-width: none;
+		float: none;
+		clear: both;
+		text-align: center;
+	}
+
+	.texto-fehgra {
+		max-width: 340px;
+		margin: 0 auto 30px auto;
+	}
+
+	.footer-contacto {
+		float: none;
+	}
+
+	.footer-social-container {
+		text-align: center;
+		float: none;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.footer-contacto-container {
+		font-size: 0.75em;
+	}
+
+	.footer-contacto {
+		display: block;
+		padding: 10px 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.texto-fehgra {
+		padding: 0 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------  PÁGINA: OFERTA DE CAPACITACIÓN  -------- */
+
+.container {
+	position: relative;
+}
+
+.ofertacap-busqueda {
+	position: absolute;
+	right: 0;
+	top: 5px;
+	display: inline-block;
+	float: right;
+
+	span {
+		float: right;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		background-color: $naranja1;
+		color: white;
+		font-size: 1.2em;
+		text-align: center;
+		line-height: 30px;
+	}
+}
+
+.ofertacap-categoria {
+	h3 {
+		margin-bottom: 40px;
+		text-transform: uppercase;
+	}
+}
+
+.ofertacap-curso {
+	width: 100%;
+	display: table;
+	margin-top: 20px;
+	color: white;
+
+	.col1, .col2, .col3 {
+		display: table-cell;
+		vertical-align: top;
+	}
+
+	.col1 {
+		min-width: 190px;
+		background-color: rgba(255,255,255,0.3);
+	}
+
+	.col2 {
+		font-size: 1.1em;
+		line-height: 1.4em;
+		padding: 30px;
+
+		h4 {
+			text-transform: uppercase;
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+
+	.col3 {
+		min-width: 160px;
+		text-align: center;
+		position: relative;
+		padding: 16px 30px 0 30px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.ofertacap-curso {
+		display: block;
+		padding-bottom: 25px;
+
+		.col2, .col3 {
+			display: block;
+			border: 0;
+		}
+
+		.col2 {
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+		}
+
+		.col1 {
+			display: block;
+			width: 100%;
+
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.ofertacap-info-oculta {
+		ul { list-style: none; margin: 0; padding: 0;}
+	}
+
+	.ofertacap-busqueda {
+		float: left;
+		position: relative;
+	}
+}
+
+
+.ofertacap-verde {
+	h3 { color: $verde1; }
+
+	.ofertacap-curso {
+		background-color: $verde1;
+
+		.col2 { border-right: 1px solid $verde2; }
+	}
+
+	.ofertacap-info-oculta { background-color: $verde2; }
+}
+
+.ofertacap-rojo {
+	h3 { color: $rojo1; }
+
+	.ofertacap-curso {
+		background-color: $rojo1;
+
+		.col2 { border-right: 1px solid $rojo2; }
+	}
+
+	.ofertacap-info-oculta { background-color: $rojo2; }
+}
+
+.ofertacap-azul {
+	h3 { color: $azul1; }
+
+	.ofertacap-curso {
+		background-color: $azul1;
+
+		.col2 { border-right: 1px solid $azul2; }
+	}
+
+	.ofertacap-info-oculta { background-color: $azul2; }
+}
+
+.ofertacap-curso-info:first-child {
+	margin-bottom: 15px;
+}
+
+
+.ofertacap-curso-info {
+	font-size: 1.15em;
+	text-align: left;
+	margin-bottom: 30px;
+
+	span {
+		font-size: 2em;
+		position: relative;
+		top: 6px;
+		margin-right: 15px;
+	}
+}
+
+.ofertacap-curso-vermas {
+	display: block;
+	max-width: 110px;
+	margin: 0 auto;
+	font-size: 1em;
+	font-weight: 700;
+	background-color: rgba(0,0,0,0.1);
+	padding: 0.6em;
+	border-radius: 7px;
+	@include transitionall02;
+}
+
+.ofertacap-curso-vermas:hover {
+	background-color: rgba(0,0,0,0.25);
+}
+
+.ofertacap-info-oculta {
+	padding: 30px 40px;
+	color: white;
+
+	h4, p {
+		margin-top: 0;
+	}
+
+	ul li {
+		padding-bottom: 25px;
+	}
+
+	ul li:last-child {
+		padding-bottom: 0;
+	}
+}
+
+.oculta {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------- */
+/* ------ SISTEMA SOLICITUD DE CURSOS ------ */
+/* ----------------------------------------- */
+
+.request-body {
+	min-width: 960px;
+}
+
+.request-header {
+	text-align: center;
+}
+
+.request-container {
+	width: 960px !important;
+	max-width: 960px;
+	margin: 0 auto;
+	display: block !important;
+	padding-top: 0px;
+}
+
+.request-fixed-wrap {
+	width: 100%;
+	position: fixed;
+	margin: 0 auto;
+	top: 0px;
+}
+
+.request-container.step {
+	padding-top: 15px !important;
+}
+
+.request-header-logo {
+	width: 230px;
+	height: 50px;
+	display: inline-block;
+	background: url(../img/logoTopSmall.png) no-repeat center center;
+	text-indent: -9999px;
+	float: left;
+	position: relative;
+	top: -4px;
+}
+
+.header-help.request {
+	position: relative;
+	top: -20px;
+}
+
+#request-header-step {
+	width: 100%;
+	height: 110px;
+	background-color: $naranjaoscuro1;
+}
+
+.h2-request {
+	font-size: 30px;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.header-step-number {
+	display: inline-block;
+	color: white;
+	background-color: $naranjaoscuro2;
+	border-radius: 5px;
+	padding: 4px 11px;
+	text-transform: uppercase;
+
+	span {
+		font-weight: bold;
+	}
+}
+
+.header-step-col1, .header-step-col2 {
+	display: inline-block;
+	color: white !important;
+	float: left;
+}
+
+.header-step-col1 {
+	width: 290px;
+	margin-right: 50px;
+}
+
+.header-step-col2 {
+	width: 600px;
+
+	p {
+		font-size: 13px;
+	}
+}
+
+.instructions {
+	font-size: 19px !important;
+	font-weight: 600;
+	margin-top: 6px;
+}
+
+
+
+
+/* ------ PASO 1 ------ */
+
+.request-search-container {
+	width: 100%; 
+	display: block;
+	margin: 240px 0px 35px 0;
+
+
+	.icon_search {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		background-color: $naranja1;
+		color: white;
+		font-size: 16px;
+		text-align: center;
+		line-height: 30px;
+		float: left;
+	}
+}
+
+.request-search-input {
+	float: left;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+	border-right: none !important;
+}
+
+#request-listing {
+	padding-bottom: 58px;
+}
+
+#listing-table {
+	width: 100%;
+	text-transform: uppercase;
+
+	th {
+		color: #7b7b7b;
+		font-size: 17px;
+		font-weight: 600;
+		text-align: left;
+		padding-bottom: 18px;
+	}
+}
+
+.listing-header {
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.course {
+	font-size: 16px;
+	border-bottom: 1px solid #e7e7e7;
+
+	td {
+		padding: 18px 0;
+	}
+
+	@include transitionall03;
+}
+
+.circle {
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+	border-radius: 7px;
+	margin-right: 15px;
+}
+
+.course-red {
+	color: $rojo1 !important;
+
+	.circle {
+		background-color: $rojo1;
+	}
+
+	.course-moreinfo {
+		background-color: $rojo1;
+	}
+
+	.course-moreinfo:hover {
+		background-color: $rojo2;
+	}
+}
+
+.course-blue {
+	color: $azul1 !important;
+
+	.circle {
+		background-color: $azul1;
+	}
+
+	.course-moreinfo {
+		background-color: $azul1;
+	}
+
+	.course-moreinfo:hover {
+		background-color: $azul2;
+	}
+}
+
+.course-green {
+	color: $verde1 !important;
+
+	.circle {
+		background-color: $verde1;
+	}
+
+	.course-moreinfo {
+		background-color: $verde1;
+	}
+
+	.course-moreinfo:hover {
+		background-color: $verde2;
+	}
+}
+
+.course-moreinfo {
+	font-size: 12px;
+	padding: 4px 11px;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.course-time, .course-modules {
+	display: inline-block;
+
+	span {
+		font-size: 24px;
+		position: relative;
+		top: 3px;
+		margin-right: 6px;
+	}
+
+	font-size: 16px;
+
+	p {
+		display: inline-block;
+	}
+}
+
+.course-modules {
+	margin-left: 17px;
+}
+
+.course-check {
+	font-size: 22px;
+	position: relative;
+	left: 32px;
+	top: -2px;
+}
+
+#request-footer {
+	width: 100%;
+	height: 59px;
+	background-color: $naranja1;
+	position: fixed;
+	bottom: 0px;
+}
+
+.request-container-footer {
+	width: 960px !important;
+	max-width: 960px;
+	margin: 0 auto;
+	display: block !important;
+	margin-top: 15px;
+}
+
+.request-footer-btnleft {
+	display: inline-block;
+	width: 120px;
+	float: left;
+}
+
+.request-footer-info {
+	display: inline-block;
+	width: 660px;
+	float: none;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	position: relative;
+	top: 4px;
+}
+
+.request-footer-btnright {
+	display: inline-block;
+	width: 120px;
+	float: right;
+}
+
+.request-container > form { display: none; }
+
+/*
+.lf-hidden {
+	display: table-row !important;
+	opacity: 0;
+	height: 0px;
+	overflow: hidden;
+	padding: 0;
+	border: 0;
+}*/
+/*
+.lf-hidden > td {
+	display: none;
+	max-height: 0px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	@include transitionall02;
+}*/
+
+
+
+
+
+/* ------ PASO 2 ------ */
+
+.course-datepicker-col1 {
+	display: inline-block;
+	width: 46px;
+	text-align: right;
+	color: #686868;
+	font-size: 0.9em;
+	line-height: 20px;
+	margin-right: 10px;
+}
+
+.course-datepicker-col2 {
+	display: inline-block;
+	width: 130px;
+
+	input {
+		width: 100%;
+	}
+
+	p {
+		width: 90px;
+		display: inline-block;
+		color: #7b7b7b;
+		font-weight: bold;
+	}
+}
+
+.course-modules-picker {
+	margin: 0 !important;
+	padding: 0 !important;
+
+	li {
+		list-style: none;
+		margin-bottom: 8px;
+
+		input {
+			font-size: 18px;
+			display: inline-block;
+			margin-right: 9px;
+		}
+
+		label {
+			display: inline-block;
+			position: relative;
+			top: 3px;
+			font-size: 1em;
+		}
+	}
+}
+
+.icon-select {
+	font-size: 1.1em;
+	padding-right: 15px;
+}
+
+.modules-list-cell {
+	min-width: 115px;
+}
+
+.course-modules-list {
+	list-style-position: inside;
+	margin: 0;
+	padding: 0;
+
+	li {
+		padding-bottom: 10px;
+	}
+}
+
+.course-info-list {
+	list-style: none;
+	list-style-position: inside;
+	margin: 0;
+	padding: 0;
+
+	li {
+		color: #7b7b7b;
+		font-weight: bold;
+		padding-bottom: 10px;
+
+		span {
+			font-size: 1.1em;
+			padding-right: 16px;
+		}
+	}
+}

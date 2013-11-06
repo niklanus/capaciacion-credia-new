@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Everslider - Responsive jQuery Carousel Plugin</title>
+	<meta name="description" content="responsive jquery carousel plugin" />
+	<meta name="author" content="flGravity" />
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		
+	<script type="text/javascript">
+		var browser			= navigator.userAgent;
+		var browserRegex	= /(Android|BlackBerry|IEMobile|Nokia|iP(ad|hone|od)|Opera M(obi|ini))/;
+		var isMobile		= false;
+		if(browser.match(browserRegex)) {
+			isMobile			= true;
+			addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+			function hideURLbar(){
+				window.scrollTo(0,1);
+			}
+		}
+	</script>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/amazium.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/everslider.css" />
+	
+	<!-- JS -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/jquery.everslider.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// Image slider
+			$('#image_slider').everslider({
+				mode: 'normal',
+				maxVisible: 1
+			});
+			
+			// Featured carousel			
+			$('#featured_carousel').everslider({
+				mode: 'carousel',
+				itemWidth: 250,
+				itemHeight: 156,
+				itemMargin: 5,
+				moveSlides: 'auto',
+				navigation: false,
+				mouseWheel: true,
+				ticker: true,
+				tickerTimeout: 3000
+			});
+			
+			// Project carousel
+			$('#project_carousel').everslider({
+				mode: 'circular',
+				itemKeepRatio: false,
+				pagination: false,
+				keyboard: true,
+				nextNav: '<span class="alt-arrow">Next</span>',    
+    			prevNav: '<span class="alt-arrow">Previous</span>'
+			});
+		});
+	</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+	<div class="row top">
+		<div class="grid_12">
+			<h1>Everslider - Responsive jQuery Carousel Plugin</h1>
+			<hr />
+			<div class="base">
+				<a class="btn" href="#examples">Examples</a>
+				<a class="btn" href="documentation/index.html">Documentation</a>
+				<a class="btn" href="http://codecanyon.net/item/everslider-responsive-jquery-carousel-plugin/5132868?ref=flGravity" target="_parent">Buy!</a>
+			</div>
+		</div>
+	</div> 
+		
+	<!-- end row -->
+	<div class="row base">
+		<a id="examples"></a>
+		<div class="grid_5">
+			<h2>Everslider as "Image Slider"</h2>
+			<p>When number of visible slides is limited to one, Everslider carousel turns into responsive slider that can be used as image slider. And in <em>"normal"</em> mode plugin will stop of first/last slide.</p>
+			<div id="image_slider" class="everslider">
+				<ul class="es-slides">
+					<li><img src="pictures/pic1.jpg" alt="Picture 1" /></li>
+					<li><img src="pictures/pic2.jpg" alt="Picture 2" /></li>
+					<li><img src="pictures/pic3.jpg" alt="Picture 3" /></li>
+					<li><img src="pictures/pic4.jpg" alt="Picture 4" /></li>
+					<li><img src="pictures/pic5.jpg" alt="Picture 5" /></li>
+				</ul>
+			</div>
+<pre class="codeblock">
+// Image slider
+$('#image_slider').everslider({
+	mode: 'normal',
+	maxVisible: 1
+});
+</pre>
+		</div>
+		<div class="grid_7">
+			<a id="example1"></a>
+			<h2>Everslider as "Featured Carousel"</h2>
+			<p>Everslider in <em>"carousel"</em> mode can help you easily organize your featured works or recent blog posts into infinite carousel. Change your slides size instantly using plugin options - itemWidth, itemHeight and itemMargin. Use <strong>mousewheel</strong> or <strong>touchswipe</strong> gesture to scroll carousel!</p>
+			<div id="featured_carousel" class="everslider">
+				<ul class="es-slides">
+					<li><a href="#example1"><img src="pictures/pic5.jpg" alt="Picture 1" />
+						<div class="featured-overlay">
+							<h4>Featured Title</h4>
+							<em>This is subheading text</em>
+						</div>
+					</a></li>
+					<li><a href="#example1"><img src="pictures/pic6.jpg" alt="Picture 1" />
+						<div class="featured-overlay">
+							<h4>Featured Title</h4>
+							<em>This is subheading text</em>
+						</div>
+					</a></li>
+					<li><a href="#example1"><img src="pictures/pic7.jpg" alt="Picture 2" />
+						<div class="featured-overlay">
+							<h4>Featured Title</h4>
+							<em>This is subheading text</em>
+						</div>
+					</a></li>
+					<li><a href="#example1"><img src="pictures/pic8.jpg" alt="Picture 3" />
+						<div class="featured-overlay">
+							<h4>Featured Title</h4>
+							<em>This is subheading text</em>
+						</div>
+					</a></li>
+					<li><a href="#example1"><img src="pictures/pic9.jpg" alt="Picture 4" />
+						<div class="featured-overlay">
+							<h4>Featured Title</h4>
+							<em>This is subheading text</em>
+						</div>
+					</a></li>
+					<li><a href="#example1"><img src="pictures/pic10.jpg" alt="Picture 5" />
+						<div class="featured-overlay">
+							<h4>Featured Title</h4>
+							<em>This is subheading text</em>
+						</div>
+					</a></li>
+				</ul>
+			</div>
+<pre class="codeblock">
+// Featured carousel
+$('#featured_carousel').everslider({
+	mode: 'carousel',
+	itemWidth: 250,
+	itemHeight: 156,
+	itemMargin: 5,
+	moveSlides: 'auto',
+	navigation: false,
+	mouseWheel: true,
+	ticker: true,
+	tickerTimeout: 3000
+});
+</pre>
+		</div> 
+	</div>
+	
+	 <!-- end row -->
+	
+	 <div class="row base">
+		<div class="grid_12">
+			<a id="example2"></a>
+			<h2>Everslider as "Fullwidth Carousel"</h2>
+			<p>By setting slide height to 'auto' in css and <em>itemKeepRatio</em> plugin option to 'false' you will have slides of any height determined by the content itself. Carousel in this example works in <em>"circular"</em> mode and enables <strong>keyboard arrows</strong> navigation, so you can test it here.</p>
+			<div id="project_carousel" class="everslider">
+				<ul class="es-slides">
+					<li>
+						<div class="project-inside">
+							<h3>Project Title</h3>
+							<p>Short description.</p>
+							<div class="project-preview">
+								<a href="#example2"><img src="pictures/pic1.jpg" alt="Project" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="project-inside">
+							<h3>Project Title</h3>
+							<p>Short description. Just a few lines to get basic idea what it is</p>
+							<div class="project-preview">
+								<a href="#example2"><img src="pictures/pic2.jpg" alt="Project" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="project-inside">
+							<h3>Project Title</h3>
+							<p>Short description. Just a few lines to get basic idea what it is</p>
+							<div class="project-preview">
+								<a href="#example2"><img src="pictures/pic3.jpg" alt="Project" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="project-inside">
+							<h3>Project Title</h3>
+							<p>Short description.</p>
+							<div class="project-preview">
+								<a href="#example2"><img src="pictures/pic4.jpg" alt="Project" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="project-inside">
+							<h3>Project Title</h3>
+							<p>Short description.</p>
+							<div class="project-preview">
+								<a href="#example2"><img src="pictures/pic5.jpg" alt="Project" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="project-inside">
+							<h3>Project Title</h3>
+							<p>Short description. Just a few lines to get basic idea what it is</p>
+							<div class="project-preview">
+								<a href="#example2"><img src="pictures/pic6.jpg" alt="Project" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="project-inside">
+							<h3>Project Title</h3>
+							<p>Short description. Just a few lines to get basic idea what it is</p>
+							<div class="project-preview">
+								<a href="#example2"><img src="pictures/pic7.jpg" alt="Project" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="project-inside">
+							<h3>Project Title</h3>
+							<p>Short description.</p>
+							<div class="project-preview">
+								<a href="#example2"><img src="pictures/pic8.jpg" alt="Project" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="project-inside">
+							<h3>Project Title</h3>
+							<p>Short description. Just a few lines to get basic idea what it is</p>
+							<div class="project-preview">
+								<a href="#example2"><img src="pictures/pic9.jpg" alt="Project" /></a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="project-inside">
+							<h3>Project Title</h3>
+							<p>Short description.</p>
+							<div class="project-preview">
+								<a href="#example2"><img src="pictures/pic10.jpg" alt="Project" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+<pre class="codeblock">
+// Project carousel
+$('#project_carousel').everslider({
+	mode: 'circular',
+	itemKeepRatio: false,
+	pagination: false,
+	keyboard: true,
+	nextNav: '&lt;span class="alt-arrow"&gt;Next&lt;/span&gt;',    
+	prevNav: '&lt;span class="alt-arrow"&gt;Previous&lt;/span&gt;',
+});
+</pre>
+		</div>
+	</div>
+
+	<!-- end row -->
+	 
+	<footer class="row">
+		<div class="grid_12">
+			<span class="copyright">&copy; 2013 flGravity</span>
+		</div>
+	</footer>
+	
+	<!-- Scripts for this preview -->
+	<script type="text/javascript" src="js/respond.min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollUp.min.js"></script>
+	<script type="text/javascript" src="js/jquery.smooth-scroll.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+		    $.scrollUp({animation:"slide", scrollText:"Top"});
+		    $('a[href^="#"]').smoothScroll({speed: 300});
+		});
+	</script>
+	
+</body>
+</html>

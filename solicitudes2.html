@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>(test) Capacitación FEHGRA</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/elegant-font.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+</head>
+<body class="request-body">
+	
+	<div class="request-fixed-wrap">
+
+	<header class="request-header">
+		<div class="request-container clearfix">
+		<h1 class="request-header-logo">Capacitación FEHGRA</h1>
+			<div class="header-login-container">
+				<!--<div class="header-login">
+					<p><i class="icon_key"></i>Acceso para usuarios</p>
+					<form class="form-inline">
+						<input type="text" class="input-small" placeholder="Email" tabindex="1">
+						<input type="password" class="input-small" placeholder="Contraseña" tabindex="2">
+							<label class="checkbox">
+							<input type="checkbox"> Remember me
+						</label> 
+						<button type="submit" class="btn" tabindex="3">Ingresar</button>
+					</form>
+				</div>-->
+
+			</div>
+
+			<a href="#" class="header-help request"><span>?</span><br>Ayuda</a>
+		</div>
+	</header>
+	<div id="request-header-step">
+		<div class="request-container step">
+			<div class="header-step-col1">
+				<h2 class="h2-request">Solicitud de Cursos</h2>
+				<p class="header-step-number"><span>Paso 2</span> - Opciones de los cursos</p>
+			</div>
+			<div class="header-step-col2">
+				<p class="instructions">Instrucciones</p>
+				<p>Entre los cursos que ha seleccionado, seleccione la ciudad y fecha de cursada, los módulos y el capacitador que desea.</p>
+			</div>
+		</div>
+	</div>
+
+</div> <!-- FIXED WRAP -->
+
+	<div class="request-search-container">
+		<div class="request-container clearfix">
+			<form action="">
+				<input type="search" placeholder="Buscar un curso..." class="request-search-input" id="filter">
+				<span class="icon_search"></span>
+			</form>
+		</div>
+	</div>
+
+	<div id="request-listing">
+		<div class="request-container">
+			<table id="listing-table">
+				<thead>
+					<tr class="listing-header">
+						<th>Nombre del Curso</th>
+						<th>Fecha de Cursada</th>
+						<th>Módulos</th>
+						<th>Ciudad y Capacitador</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="course course-red">
+						<td><span class="circle"></span>Desarollo Web</td>
+						<td>
+							<div>
+								<div class="course-datepicker-col1">Entre</div>
+								<div class="course-datepicker-col2"><input type="text" class="datepicker"></div>
+							</div>
+							<div>
+								<div class="course-datepicker-col1">Y</div>
+								<div class="course-datepicker-col2"><input type="text" class="datepicker"></div>
+							</div>
+						</td>
+						<td class="modules-list-cell">
+							<ul class="course-modules-picker">
+								<li><input type="checkbox" name="checkbox-mod1"><label for="checkbox-mod1">Módulo 1</label></li>
+								<li><input type="checkbox" name="checkbox-mod1"><label for="checkbox-mod1">Módulo 2</label></li>
+							</ul>
+						</td>
+						<td>
+							<span class="icon_pin icon-select"></span><select name="Ciudad" id="">
+								<option value="">Capital Federal</option>
+								<option value="">Córdoba</option>
+								<option value="">Rosario</option>
+								<option value="">Mendoza</option>
+								<option value="">La Plata</option>
+								<option value="">San Miguel de Tucumán</option>
+								<option value="">Santa Fe</option>
+								<option value="">Mar del Plata</option>
+								<option value="">Salta</option>
+								<option value="">San Juan</option>
+							</select><br>
+							<span class="icon_id-2_alt icon-select"></span><select name="Capacitador" id="">
+								<option value="">Lic. Andrés Moritán</option>
+								<option value="">Dr. Alejo Amiras</option>
+								<option value="">Ing. Nicolás Lanús</option>
+							</select>
+						</td>
+					</tr>
+<!-- 
+					<tr class="course course-blue">
+						<td><span class="circle"></span>Desarollo Web</td>
+						<td><a href="#" class="course-moreinfo">Ver Ficha Completa</a></td>
+						<td>
+							<div class="course-time">
+								<span class="icon_clock_alt"></span>
+								<p>12 HS.</p>
+							</div>
+							<div class="course-modules">
+								<span class="icon_documents_alt"></span>
+								<p>2 MÓDULOS</p>
+							</div>
+						</td>
+						<td class="check-container">
+							<input class="course-check" type="checkbox" value="check">
+						</td>
+					</tr>
+
+					<tr class="course course-green">
+						<td class="course-name"><span class="circle"></span>RELOCO</td>
+						<td><a href="#" class="course-moreinfo">Ver Ficha Completa</a></td>
+						<td>
+							<div class="course-time">
+								<span class="icon_clock_alt"></span>
+								<p>12 HS.</p>
+							</div>
+							<div class="course-modules">
+								<span class="icon_documents_alt"></span>
+								<p>2 MÓDULOS</p>
+							</div>
+						</td>
+						<td class="check-container">
+							<input class="course-check" type="checkbox" value="check">
+						</td>
+					</tr>-->
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div id="request-footer">
+		<div class="request-container-footer">
+			<div class="request-footer-btnleft"><button class="btn" onclick="location.href='solicitudes.html'">Anterior</button></div>
+			<div class="request-footer-info">Haga click en <strong>Continuar</strong> para seguir con el proceso de solicitud...</div>
+			<div class="request-footer-btnright"><button class="btn" onclick="location.href='solicitudes3.html'">Continuar</button></div>
+		</div>
+	</div>
+
+	<script>
+		$(function() {
+		    $( ".datepicker" ).datepicker();
+
+		    $.datepicker.regional['es'] = {
+        closeText: 'Cerrar',
+        prevText: '<Ant',
+        nextText: 'Sig>',
+        currentText: 'Hoy',
+        monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+        monthNamesShort: ['Ene','Feb','Mar','Abr', 'May','Jun','Jul','Ago','Sep', 'Oct','Nov','Dic'],
+        dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+        dayNamesShort: ['Dom','Lun','Mar','Mié','Juv','Vie','Sáb'],
+        dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
+        weekHeader: 'Sm',
+        dateFormat: 'dd/mm/yy',
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: ''
+    };
+    $.datepicker.setDefaults($.datepicker.regional['es']);
+		});
+	</script>
+</body>
+</html>
