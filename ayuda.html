@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>(test) Capacitación FEHGRA</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="css/elegant-font.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive-nav.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/responsive-nav.min.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>
+		<div class="header-container">
+			<h1 class="header-logo">Capacitación FEHGRA</h1>
+			<div class="header-login-container">
+				<div class="header-login">
+					<p><i class="icon_key"></i>Acceso para usuarios</p>
+					<form class="form-inline">
+						<input type="text" class="input-small" placeholder="Email" tabindex="1">
+						<input type="password" class="input-small" placeholder="Contraseña" tabindex="2">
+						<!-- <label class="checkbox">
+							<input type="checkbox"> Remember me
+						</label> -->
+						<button type="submit" class="btn" tabindex="3">Ingresar</button>
+					</form>
+				</div>
+
+			</div>
+
+			<a href="#" class="header-help" style="display:none"><span>?</span><br>Ayuda</a>
+
+			<nav role="navigation">
+				<ul class="nav nav-pills" id="nav">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="ofertacap.html">Oferta de capacitación</a></li>
+					<li><a href="sobre.html">Sobre el Departamento</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+			<div id="nav-toggle"><i class="icon_menu"></i></div>
+		</div> <!-- termina .header-container -->
+	</header>
+
+	<div class="container">
+		<h2>Ayuda</h2>
+		
+
+		<div class="accordion" id="ayuda-accordion">
+
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle" data-toggle="collapse" data-parent="#ayuda-accordion" href="#ayuda-1">
+						<p>Tengo un problema para <strong>acceder a la plataforma</strong></p>
+						<span class="arrow_carrot-down_alt"></span>
+					</a>
+				</div>
+
+			    <div id="ayuda-1" class="accordion-body collapse">
+			    	<div class="accordion-inner">
+			    		
+						<div class="accordion-heading inner">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#ayuda-1" href="#ayuda-1-1">
+								<p>La página se ve mal <i>(desordenada, “rota”)</i></p>
+								<span class="arrow_carrot-down_alt"></span>
+							</a>
+						</div>
+
+						<div id="ayuda-1-1" class="accordion-body collapse">
+			    			<div class="accordion-inner">
+			    				<div class="container">
+			    				<ul class="ayuda-lista">
+			    					<li><a href="#" data-toggle="tooltip" title="Presiona F5 en Windows o Cmd+R en Mac">Volver a cargar</a> la página.</li>
+			    					<li><a href="http://es.wikihow.com/borrar-la-cach%C3%A9-del-navegador" target="_blank" data-toggle="tooltip" title="Hacé click para aprender a hacerlo">Borrar el caché</a> y volver a acceder.</li>
+			    					<li><strong>Cambiar de explorador:</strong> se recomienda utilizar <a href="https://www.google.com/intl/es/chrome/browser/?hl=es" target="_blank" data-toggle="tooltip" title="Hacé click para instalarlo, es muy fácil!">Google Chrome.</a></li>
+			    					<li><a href="contacto.html" data-toggle="tooltip" title="Antes de comunicarte, por favor asegúrate que la respuesta a tu pregunta no se encuentra en esta sección de ayuda.">Comunicarse con soporte.</a></li>
+			    				</ul>
+			    				</div>
+							</div>
+			    		</div>
+
+						<div class="accordion-heading inner">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#ayuda-1" href="#ayuda-1-2">
+								<p>No termina de cargar la página</i></p>
+								<span class="arrow_carrot-down_alt"></span>
+							</a>
+						</div>
+
+						<div id="ayuda-1-2" class="accordion-body collapse">
+			    			<div class="accordion-inner">
+			    				<div class="container">
+			    				<ul class="ayuda-lista">
+			    					<li>Etc, etc...</li>
+			    				</ul>
+			    				</div>
+							</div>
+			    		</div>
+
+
+			    	</div>
+			    </div>
+			</div>
+
+		</div>
+
+
+
+	</div> <!-- termina .container -->
+
+	<footer>
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span6 footer-logo-container">
+					<img src="img/logoFooter.png" alt="Logo FEHGRA" class="logoFooter">
+					<p class="texto-fehgra">Federación Empresaria Hotelera
+	Gastronómica de la República Argentina</p>
+				</div>
+				<div class="span6 footer-contacto-container">
+					<div class="footer-contacto"><a href="mailto:capacitacion@fehgra.org.ar"><span class="icon_mail"></span>capacitacion@fehgra.org.ar</a></div>
+					<div class="footer-contacto"><span class="icon_phone"></span>(+54 0) 11 4822-7733 - <i>int. 118/123</i></div>
+					<div class="footer-social-container">
+						<a href=""><span class="social_facebook"></span></a>
+						<a href=""><span class="social_twitter"></span></a>
+						<a href=""><span class="social_linkedin"></span></a>
+						<a href=""><span class="social_youtube"></span></a>
+						<a href=""><span class="social_flickr"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- TOOLTIPS SOPORTE -->
+
+	<script>
+		$(document).ready(function(){
+			$('.accordion-inner a').tooltip({
+				placement: 'top',
+				container: 'body'
+			});
+		});
+	</script>
+
+	<!-- RESPONSIVE NAV -->
+
+	<script>
+		var navigation = responsiveNav("#nav", { // Selector: The ID of the wrapper
+		  animate: true, // Boolean: Use CSS3 transitions, true or false
+		  transition: 400, // Integer: Speed of the transition, in milliseconds
+		  label: "", // String: Label for the navigation toggle
+		  insert: "after", // String: Insert the toggle before or after the navigation
+		  customToggle: "#nav-toggle", // Selector: Specify the ID of a custom toggle
+		  openPos: "relative", // String: Position of the opened nav, relative or static
+		  jsClass: "js", // String: 'JS enabled' class which is added to <html> el
+		  init: function(){}, // Function: Init callback
+		  open: function(){}, // Function: Open callback
+		  close: function(){} // Function: Close callback
+		});
+	</script>
+
+</body>
+</html>

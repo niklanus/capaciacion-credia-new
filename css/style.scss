@@ -1160,6 +1160,128 @@ section#contacto {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------  PÁGINA: AYUDA  -------- */
+
+.accordion-heading {
+	background-color: $naranjaoscuro1;
+	font-size: 1.2em;
+	padding: 12px 0;
+	@include transitionall02;
+	position: relative;
+
+	a {
+		outline: 0 !important;
+	}
+	
+	p {
+		display: inline-block;
+		padding-right: 40px;
+		margin: 0;
+	}
+
+	span {
+		display: inline-block;
+		font-size: 1.3em;
+		position: absolute;
+		top: 17px;
+		right: 20px;
+	}
+}
+
+.accordion-heading:hover, .accordion-heading.inner:hover {
+	background-color: $naranjaoscuro2;
+}
+
+.accordion-heading.inner {
+	font-size: 1.1em;
+	background-color: $naranja1;
+	padding: 6px 0;
+	margin-bottom: 8px;
+
+	span {
+		top: 14px;
+	}
+}
+
+.accordion-inner {
+	border: none;
+}
+
+.ayuda-lista {
+	list-style-type: square;
+	margin-bottom: 25px;
+
+	li { padding-bottom: 10px; }
+
+	a {
+		color: white;
+		font-weight: 600;
+		background-color: $naranja1;
+		padding: 0.2em 0.6em;
+		border-radius: 4px;
+		@include transitionall02;
+	}
+
+	a:hover {
+		background-color: $naranjaoscuro2;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------------------------------- */
 /* ------ SISTEMA SOLICITUD DE CURSOS ------ */
 /* ----------------------------------------- */
