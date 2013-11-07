@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>(test) Capacitación FEHGRA</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="css/elegant-font.css">
+	<link rel="stylesheet" href="css/everslider.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive-nav.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/responsive-nav.min.js"></script>
+
+	<script src="js/jquery.everslider.min.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>
+		<div class="header-container">
+			<h1 class="header-logo">Capacitación FEHGRA</h1>
+			<div class="header-login-container">
+				<div class="header-login">
+					<p><i class="icon_key"></i>Acceso para usuarios</p>
+					<form class="form-inline">
+						<input type="text" class="input-small" placeholder="Email" tabindex="1">
+						<input type="password" class="input-small" placeholder="Contraseña" tabindex="2">
+						<!-- <label class="checkbox">
+							<input type="checkbox"> Remember me
+						</label> -->
+						<button type="submit" class="btn" tabindex="3">Ingresar</button>
+					</form>
+				</div>
+
+			</div>
+
+			<a href="#" class="header-help"><span>?</span><br>Ayuda</a>
+
+			<nav role="navigation">
+				<ul class="nav nav-pills" id="nav">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="ofertacap.html">Oferta de capacitación</a></li>
+					<li class="active"><a href="sobre.html">Sobre el Departamento</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+			<div id="nav-toggle"><i class="icon_menu"></i></div>
+		</div> <!-- termina .header-container -->
+	</header>
+
+	<div class="container">
+		<h2>Sobre el Departamento</h2>
+		<div id="sobre-slider" class="carousel slide">
+		  <ol class="carousel-indicators">
+		    <li data-target="#sobre-slider" data-slide-to="0" class="active"></li>
+		    <li data-target="#sobre-slider" data-slide-to="1"></li>
+		    <li data-target="#sobre-slider" data-slide-to="2"></li>
+		  </ol>
+		  <!-- Carousel items -->
+		  <div class="carousel-inner">
+		    <div class="active item">
+		    	<img src="img/sobre-slider/sobre1.jpg" alt="">
+		    	<div class="sobre-caption">
+		    		<p>El <strong>Departamento de Capacitación de FEHGRA</strong> es un nudo central de las políticas institucionales de la entidad.</p>
+		    		<p>Ya desde la creación de su estauto, FEHGRA impulsó fuertemente la capacitación como uno de sus pilares. Con lo cual, para nuestra entidad, capacitar no es una elección sino una obligación que le otorga sentido a su misión en el sector.</p>
+		    	</div>
+		    </div>
+		    <div class="item">
+		    	<img src="img/sobre-slider/sobre2.jpg" alt="">
+		    	<div class="sobre-caption">
+		    		<p>Actualmente, el Departamento de Capacitación de FEHGRA gestiona y administra <strong>más de 300 cursos y seminarios</strong> por año en todo el país.</p>
+		    		<p>Esto supone un notable esfuerzo de todo el grupo de trabajo, tanto del departamento como de sus Filiales y Capacitadores, de modo de articular todas las acciones necesarias para que la educación y capacitación llegue a todos aquellos que desean superarse día a día.</p>
+		    	</div>
+		    </div>
+		    <div class="item">
+		    	<img src="img/sobre-slider/sobre3.jpg" alt="">
+		    	<div class="sobre-caption">
+		    		<p>Por otra parte, en nuestro departamento confluyen otras actividades relacionadas, tales como nuestra Escuela de Dirigentes "Julio Gayá", Seminarios Especiales, Elaboración de Acuerdos Marco con Universidades e Instituciones Educativas de todo el país, y muy especialmente, la asistencia y apoyo en la realización de eventos relacionados, donde siempre tiene lugar la capacitación.</p>
+		    	</div>
+		    </div>
+
+		  </div>
+		  <!-- Carousel nav -->
+		  <a class="carousel-control left" href="#sobre-slider" data-slide="prev"><i class="arrow_carrot-left"></i></a>
+		  <a class="carousel-control right" href="#sobre-slider" data-slide="next"><i class="arrow_carrot-right"></i></a>
+		</div>
+
+	</div> <!-- termina .container -->
+
+	<footer>
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span6 footer-logo-container">
+					<img src="img/logoFooter.png" alt="Logo FEHGRA" class="logoFooter">
+					<p class="texto-fehgra">Federación Empresaria Hotelera
+	Gastronómica de la República Argentina</p>
+				</div>
+				<div class="span6 footer-contacto-container">
+					<div class="footer-contacto"><a href="mailto:capacitacion@fehgra.org.ar"><span class="icon_mail"></span>capacitacion@fehgra.org.ar</a></div>
+					<div class="footer-contacto"><span class="icon_phone"></span>(+54 0) 11 4822-7733 - <i>int. 118/123</i></div>
+					<div class="footer-social-container">
+						<a href=""><span class="social_facebook"></span></a>
+						<a href=""><span class="social_twitter"></span></a>
+						<a href=""><span class="social_linkedin"></span></a>
+						<a href=""><span class="social_youtube"></span></a>
+						<a href=""><span class="social_flickr"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script>
+
+		$(document).ready(function(){  
+	        $('#home-ofertacap-carousel').everslider({  
+	            mode: 'carousel',  
+	            moveSlides: 'auto',
+	            itemWidth: 320,
+	            swipeThreshold: 70
+	            //swipePage: true
+	        });  
+	    });
+
+
+		$(document).ready(function(){  
+	        $('#home-equipo-carousel').everslider({  
+	            mode: 'carousel',  
+	            moveSlides: 'auto',
+	            itemWidth: 230,
+	            itemHeight: 300
+	        });  
+	    });
+	</script>
+
+	<script>
+
+		$(".ofertacap-item-containerimg").click(function() {
+			$(this).toggleClass("fullheight");
+		});
+
+		$(".ofertacap-item-containerimg").click(function() {
+			$(this).siblings('i').toggleClass("ocultarflecha");
+		});
+	</script>
+
+	
+
+
+
+	<!-- RESPONSIVE NAV -->
+
+	<script>
+		var navigation = responsiveNav("#nav", { // Selector: The ID of the wrapper
+		  animate: true, // Boolean: Use CSS3 transitions, true or false
+		  transition: 400, // Integer: Speed of the transition, in milliseconds
+		  label: "", // String: Label for the navigation toggle
+		  insert: "after", // String: Insert the toggle before or after the navigation
+		  customToggle: "#nav-toggle", // Selector: Specify the ID of a custom toggle
+		  openPos: "relative", // String: Position of the opened nav, relative or static
+		  jsClass: "js", // String: 'JS enabled' class which is added to <html> el
+		  init: function(){}, // Function: Init callback
+		  open: function(){}, // Function: Open callback
+		  close: function(){} // Function: Close callback
+		});
+	</script>
+
+
+	<!-- Virtualhostx Auto-refresh -->
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':62182/autorefresh.js"></' + 'script>')</script>
+</body>
+</html>

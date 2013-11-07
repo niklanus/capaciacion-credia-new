@@ -974,6 +974,79 @@ footer {
 
 
 
+
+
+
+
+
+/* --------  PÁGINA: SOBRE EL DEPARTAMENTO  -------- */
+
+.sobre-caption {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.65);
+	padding: 40px;
+
+	p {
+		color: white;
+		font-size: 1.3em;
+		line-height: 1.35em;
+	}
+}
+
+@media only screen and (max-width: 979px) {
+	.sobre-caption {
+		position: relative;
+		background-color: $naranja1;
+		margin-top: 25px;
+	}
+
+}
+
+@media only screen and (max-width: 650px) {
+	#sobre-slider .carousel-control {
+		top: 12% !important;
+	}
+
+	.sobre-caption {
+		padding: 25px;
+		font-size: 0.9em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------------------------------- */
 /* ------ SISTEMA SOLICITUD DE CURSOS ------ */
 /* ----------------------------------------- */
