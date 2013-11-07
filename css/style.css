@@ -5,10 +5,13 @@ body {
 h2 {
   color: #ff8d3a;
   font-weight: 600;
-  margin: 0 0 20px 0; }
+  margin: 20px 0 20px 0; }
 
 a {
   cursor: pointer; }
+
+input, textarea {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; }
 
 * {
   -webkit-margin-before: 0;
@@ -515,7 +518,7 @@ footer {
 .ofertacap-busqueda {
   position: absolute;
   right: 0;
-  top: 5px;
+  top: 25px;
   display: inline-block;
   float: right; }
   .ofertacap-busqueda span {
@@ -583,7 +586,8 @@ footer {
 
   .ofertacap-busqueda {
     float: left;
-    position: relative; } }
+    position: relative;
+    margin-bottom: 25px; } }
 .ofertacap-verde h3 {
   color: #86c440; }
 .ofertacap-verde .ofertacap-curso {
@@ -677,6 +681,55 @@ footer {
   .sobre-caption {
     padding: 25px;
     font-size: 0.9em; } }
+/* --------  PÁGINA: CONTACTO  -------- */
+section#contacto .row-fluid {
+  margin-top: 45px; }
+section#contacto .btn.btn-large {
+  display: block;
+  margin: 0 auto; }
+section#contacto .add-on {
+  background-color: #ff8d3a;
+  color: white;
+  text-shadow: none; }
+section#contacto textarea {
+  border-radius: 5px; }
+section#contacto .span7 {
+  padding-right: 30px; }
+
+.contacto-ayuda, .contacto-ayuda-oscuro {
+  background-color: #ff8d3a;
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 1.8em;
+  line-height: 1.4em;
+  padding: 25px; }
+  .contacto-ayuda span, .contacto-ayuda-oscuro span {
+    font-size: 5em; }
+  .contacto-ayuda p, .contacto-ayuda-oscuro p {
+    margin-bottom: 0; }
+
+.contacto-ayuda-oscuro {
+  background-color: #f06c18;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+.contacto-ayuda-oscuro:hover {
+  background-color: #d0570a;
+  padding: 35px 25px; }
+
+@media only screen and (max-width: 979px) {
+  .contacto-ayuda, .contacto-ayuda-oscuro {
+    font-size: 1.4em; } }
+@media only screen and (max-width: 767px) {
+  section#contacto .span7 {
+    padding-right: 0; }
+
+  .contacto-ayuda {
+    margin-top: 40px; } }
 /* ----------------------------------------- */
 /* ------ SISTEMA SOLICITUD DE CURSOS ------ */
 /* ----------------------------------------- */

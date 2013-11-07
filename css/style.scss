@@ -42,11 +42,15 @@ body {
 h2 {
 	color: $naranja1;
 	font-weight: 600;
-	margin: 0 0 20px 0;
+	margin: 20px 0 20px 0;
 }
 
 a {
 	cursor: pointer;
+}
+
+input, textarea {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 * {
@@ -745,7 +749,7 @@ footer {
 .ofertacap-busqueda {
 	position: absolute;
 	right: 0;
-	top: 5px;
+	top: 25px;
 	display: inline-block;
 	float: right;
 
@@ -841,6 +845,7 @@ footer {
 	.ofertacap-busqueda {
 		float: left;
 		position: relative;
+		margin-bottom: 25px;
 	}
 }
 
@@ -1022,6 +1027,114 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------  PÁGINA: CONTACTO  -------- */
+
+section#contacto {
+	.row-fluid {
+		margin-top: 45px;
+	}
+
+	.btn.btn-large {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.add-on {
+		background-color: $naranja1;
+		color: white;
+		text-shadow: none;
+	}
+
+	textarea {
+		border-radius: 5px;
+	}
+
+	.span7 {
+		padding-right: 30px;
+	}
+}
+
+.contacto-ayuda, .contacto-ayuda-oscuro {
+	background-color: $naranja1;
+	display: block;
+	color: white;
+	text-align: center;
+	font-size: 1.8em;
+	line-height: 1.4em;
+	padding: 25px;
+
+	span {
+		font-size: 5em;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.contacto-ayuda-oscuro {
+	background-color: $naranjaoscuro1;
+	font-weight: 600;
+	@include transitionall02;
+}
+
+.contacto-ayuda-oscuro:hover {
+	background-color: $naranjaoscuro2;
+	padding: 35px 25px;
+}
+
+@media only screen and (max-width: 979px) {
+	.contacto-ayuda, .contacto-ayuda-oscuro {
+		font-size: 1.4em;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	section#contacto {
+		.span7 {
+			padding-right: 0;
+		}
+	}
+
+	.contacto-ayuda {
+		margin-top: 40px;
+	}
+}
 
 
 
