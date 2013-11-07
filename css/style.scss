@@ -7,7 +7,6 @@ $naranjafondo: #ffefde;
 $azul1: #348dc9;
 $azul2: #2e7cb2;
 
-
 $verde1: #86c440;
 $verde2: #7ab13c;
 
@@ -1373,6 +1372,42 @@ footer {
 		span {
 			font-size: 1.1em;
 			padding-right: 16px;
+		}
+	}
+}
+
+#request-done {
+	width: 100%;
+	text-align: center;
+	margin-top: 250px;
+	color: $verde1;
+
+	.gracias {
+		font-weight: 700;
+		margin-top: 7px;
+		margin-bottom: 40px;
+	}
+
+	h2 {
+		font-weight: 500;
+		color: $verde1;
+		margin-top: 20px;
+		margin-bottom: 0px;
+	}
+
+	.check {
+		font-size: 5em;
+	}
+
+	.btn {
+		font-size: 1.1em;
+		font-weight: 600;
+
+		span {
+			font-size: 1.2em;
+			margin-right: 12px;
+			position: relative;
+			top: 2px;
 		}
 	}
 }

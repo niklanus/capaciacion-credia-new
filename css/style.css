@@ -957,3 +957,28 @@ footer {
     .course-info-list li span {
       font-size: 1.1em;
       padding-right: 16px; }
+
+#request-done {
+  width: 100%;
+  text-align: center;
+  margin-top: 250px;
+  color: #86c440; }
+  #request-done .gracias {
+    font-weight: 700;
+    margin-top: 7px;
+    margin-bottom: 40px; }
+  #request-done h2 {
+    font-weight: 500;
+    color: #86c440;
+    margin-top: 20px;
+    margin-bottom: 0px; }
+  #request-done .check {
+    font-size: 5em; }
+  #request-done .btn {
+    font-size: 1.1em;
+    font-weight: 600; }
+    #request-done .btn span {
+      font-size: 1.2em;
+      margin-right: 12px;
+      position: relative;
+      top: 2px; }
