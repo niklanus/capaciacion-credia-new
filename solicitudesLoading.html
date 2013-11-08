@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>(test) Capacitación FEHGRA</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="css/elegant-font.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+</head>
+<body class="request-body">
+	
+
+	<!-- Overlay loading -->
+	<div class="request-cargando-container">
+		<div class="request-cargando"></div>
+	</div>
+
+
+	<div class="request-fixed-wrap">
+
+	<header class="request-header">
+		<div class="request-container clearfix">
+		<h1 class="request-header-logo">Capacitación FEHGRA</h1>
+			<div class="header-login-container">
+				<!--<div class="header-login">
+					<p><i class="icon_key"></i>Acceso para usuarios</p>
+					<form class="form-inline">
+						<input type="text" class="input-small" placeholder="Email" tabindex="1">
+						<input type="password" class="input-small" placeholder="Contraseña" tabindex="2">
+							<label class="checkbox">
+							<input type="checkbox"> Remember me
+						</label> 
+						<button type="submit" class="btn" tabindex="3">Ingresar</button>
+					</form>
+				</div>-->
+
+			</div>
+
+			<a href="#" class="header-help request"><span>?</span><br>Ayuda</a>
+		</div>
+	</header>
+	<div id="request-header-step">
+		<div class="request-container step">
+			<div class="header-step-col1">
+				<h2 class="h2-request">Solicitud de Cursos</h2>
+				<p class="header-step-number"><span>Paso 1</span> - Selección</p>
+			</div>
+			<div class="header-step-col2">
+				<p class="instructions">Instrucciones</p>
+				<p>Seleccione todos los cursos que desee solicitar. Use el buscador para encontrar los cursos por su nombre mas fácilmente. Haga click en un curso para ver más información.</p>
+			</div>
+		</div>
+	</div>
+
+</div> <!-- FIXED WRAP -->
+
+	<div class="request-search-container">
+		<div class="request-container clearfix">
+			<form action="">
+				<input type="search" placeholder="Buscar un curso..." class="request-search-input" id="filter">
+				<span class="icon_search"></span>
+			</form>
+		</div>
+	</div>
+
+	<div id="request-listing">
+		<div class="request-container">
+			<table id="listing-table">
+				<thead>
+					<tr class="listing-header">
+						<th>Nombre del Curso</th>
+						<th>Información</th>
+						<th>Horarios y Módulos</th>
+						<th>Solicitar</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="course course-red">
+						<td><span class="circle"></span>Desarollo Web</td>
+						<td><a href="#" class="course-moreinfo">Ver Ficha Completa</a></td>
+						<td>
+							<div class="course-time">
+								<span class="icon_clock_alt"></span>
+								<p>12 HS.</p>
+							</div>
+							<div class="course-modules">
+								<span class="icon_documents_alt"></span>
+								<p>2 MÓDULOS</p>
+							</div>
+						</td>
+						<td class="check-container">
+							<input class="course-check" type="checkbox" value="check">
+						</td>
+					</tr>
+
+					<tr class="course course-blue">
+						<td><span class="circle"></span>Desarollo Web</td>
+						<td><a href="#" class="course-moreinfo">Ver Ficha Completa</a></td>
+						<td>
+							<div class="course-time">
+								<span class="icon_clock_alt"></span>
+								<p>12 HS.</p>
+							</div>
+							<div class="course-modules">
+								<span class="icon_documents_alt"></span>
+								<p>2 MÓDULOS</p>
+							</div>
+						</td>
+						<td class="check-container">
+							<input class="course-check" type="checkbox" value="check">
+						</td>
+					</tr>
+
+					<tr class="course course-green">
+						<td class="course-name"><span class="circle"></span>RELOCO</td>
+						<td><a href="#" class="course-moreinfo">Ver Ficha Completa</a></td>
+						<td>
+							<div class="course-time">
+								<span class="icon_clock_alt"></span>
+								<p>12 HS.</p>
+							</div>
+							<div class="course-modules">
+								<span class="icon_documents_alt"></span>
+								<p>2 MÓDULOS</p>
+							</div>
+						</td>
+						<td class="check-container">
+							<input class="course-check" type="checkbox" value="check">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div id="request-footer">
+		<div class="request-container-footer">
+			<div class="request-footer-btnleft"></div>
+			<div class="request-footer-info">Haga click en <strong>Continuar</strong> para seguir con el proceso de solicitud...</div>
+			<div class="request-footer-btnright"><button class="btn" onclick="location.href='solicitudes2.html'">Continuar</button></div>
+		</div>
+	</div>
+
+	<script>
+		$( document ).ready(function() {
+		    $('.request-container > form').css('display','block');
+		});
+	</script>
+
+	<script src="js/livefilter.js"></script>
+	<script>
+		$('#filter').livefilter({
+			selector:'.course',
+			debounce: 0,
+		});
+	</script>
+</body>
+</html>
