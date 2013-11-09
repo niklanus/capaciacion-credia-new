@@ -571,6 +571,7 @@ footer {
       display: block;
       border: 0; }
     .ofertacap-curso .col2 {
+      border-right: 0px !important;
       border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
     .ofertacap-curso .col1 {
       display: block;
@@ -785,6 +786,88 @@ section#contacto .span7 {
   .ayuda-lista a:hover {
     background-color: #d0570a; }
 
+/* --------  PÁGINA: EQUIPO DE CAPACITADORES  -------- */
+.capacitador .ofertacap-curso {
+  background-color: #5abcb3; }
+  .capacitador .ofertacap-curso .col2 {
+    border-right: 1px solid #309e94; }
+    .capacitador .ofertacap-curso .col2 p {
+      font-size: 1.1em;
+      font-style: italic;
+      letter-spacing: -1px; }
+  .capacitador .ofertacap-curso .col3 h4 {
+    text-align: left; }
+.capacitador .ofertacap-info-oculta {
+  background-color: #309e94; }
+.capacitador .capacitador-nombre {
+  font-size: 1.5em;
+  line-height: 25px; }
+
+.capacitador-mail {
+  display: block;
+  background-color: #309e94;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .capacitador-mail span {
+    font-size: 1.2em;
+    margin-right: 12px; }
+
+.capacitador-mail:hover {
+  background-color: #268d84; }
+
+.capacitador .ofertacap-info-oculta ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .capacitador .ofertacap-info-oculta ul li {
+    padding-bottom: 42px; }
+  .capacitador .ofertacap-info-oculta ul li:last-child {
+    padding-bottom: 0; }
+
+.capacitador-info-h4 {
+  text-transform: uppercase;
+  margin: 22px 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1); }
+  .capacitador-info-h4 span {
+    margin-right: 15px;
+    position: relative;
+    top: 1px; }
+
+.capacitador-lista {
+  list-style-type: square !important;
+  list-style-position: inside !important; }
+  .capacitador-lista li {
+    padding-bottom: 25px !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px; }
+    .capacitador-lista li p {
+      margin: 0; }
+  .capacitador-lista li:last-child {
+    border-bottom: 0px;
+    margin-bottom: 0; }
+
+.capacitador-lista-titulo {
+  margin-bottom: 9px !important; }
+  .capacitador-lista-titulo strong {
+    font-size: 1.15em; }
+  .capacitador-lista-titulo span {
+    font-style: italic; }
+
+@media only screen and (max-width: 767px) {
+  .capacitador-mail span {
+    display: none; } }
+@media only screen and (max-width: 380px) {
+  .capacitador-mail {
+    font-size: 0.8em; } }
+@media only screen and (max-width: 320px) {
+  .capacitador-mail {
+    font-size: 0.7em; } }
 /* ----------------------------------------- */
 /* ------ SISTEMA SOLICITUD DE CURSOS ------ */
 /* ----------------------------------------- */

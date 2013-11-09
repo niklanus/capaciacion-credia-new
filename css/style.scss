@@ -17,6 +17,8 @@ $azul1: #348dc9;
 $azul2: #2e7cb2;
 
 $celeste1: #5abcb3;
+$celeste2: #309e94;
+$celeste3: #268d84;
 
 
 @mixin transitionall02 {
@@ -824,6 +826,7 @@ footer {
 		}
 
 		.col2 {
+			border-right: 0px !important;
 			border-bottom: 1px solid rgba(0,0,0,0.1);
 		}
 
@@ -1258,6 +1261,152 @@ section#contacto {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------  PÁGINA: EQUIPO DE CAPACITADORES  -------- */
+
+.capacitador {
+
+	.ofertacap-curso {
+		background-color: $celeste1;
+
+		.col2 { border-right: 1px solid $celeste2;
+			p {
+				font-size: 1.1em;
+				font-style: italic;
+				letter-spacing: -1px;
+			}
+		}
+
+		.col3 h4 {
+			text-align: left;
+		}
+	}
+
+	.ofertacap-info-oculta { background-color: $celeste2; }
+
+	.capacitador-nombre {
+		font-size: 1.5em;
+		line-height: 25px;
+	}
+}
+
+.capacitador-mail {
+	display: block;
+	background-color: $celeste2;
+	padding: 12px 20px;
+	font-size: 1.1em;
+	margin-bottom: 30px;
+	@include transitionall02;
+
+	span {
+		font-size: 1.2em;
+		margin-right: 12px;
+	}
+}
+
+.capacitador-mail:hover {
+	background-color: $celeste3;
+}
+
+.capacitador .ofertacap-info-oculta ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	li { padding-bottom: 42px; }
+	li:last-child { padding-bottom: 0; }
+}
+
+.capacitador-info-h4 {
+	text-transform: uppercase;
+	margin: 22px 0;
+	padding: 20px;
+	background-color: rgba(0,0,0,0.1);
+
+	span {
+		margin-right: 15px;
+		position: relative;
+		top: 1px;
+	}
+}
+
+.capacitador-lista {
+	list-style-type: square !important;
+	list-style-position: inside !important;
+
+	li {
+		padding-bottom: 25px !important;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		margin-bottom: 24px;
+
+		p {margin: 0;}
+	}
+
+	li:last-child {
+		border-bottom: 0px;
+		margin-bottom: 0;
+	}
+}
+
+.capacitador-lista-titulo {
+	margin-bottom: 9px !important;
+
+	strong {
+		font-size: 1.15em;
+	}
+
+	span {
+		font-style: italic;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.capacitador-mail {
+		span {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	.capacitador-mail {
+		font-size: 0.8em;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.capacitador-mail {
+		font-size: 0.7em;
+	}
+}
 
 
 
