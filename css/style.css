@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   border-top: 4px solid #f06c18;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif; }
@@ -66,6 +67,59 @@ header {
       top: 1px; }
   .header-login input:focus, .header-login input:active {
     background-color: #ffebdc; }
+
+.header-login.logged {
+  padding-bottom: 15px; }
+
+.header-login-profile, .header-login-info {
+  float: left;
+  display: inline-block; }
+
+.header-login-profile {
+  margin: 0 15px; }
+
+.login-user p {
+  font-size: 1.1em !important;
+  font-weight: 600 !important;
+  color: white !important; }
+
+.login-controls {
+  text-align: left; }
+  .login-controls a {
+    margin-right: 5px; }
+
+.login-notifications {
+  display: inline-block;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
+  padding: 3px 9px;
+  background-color: #f06c18;
+  border-radius: 20px; }
+
+.login-notifications:hover {
+  background-color: #d0570a; }
+
+.login-control {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  font-size: 1.1em;
+  background-color: white;
+  color: #ff8d3a;
+  text-align: center;
+  line-height: 26px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+.login-control:hover {
+  background-color: #f06c18;
+  color: white;
+  text-align: center;
+  line-height: 26px; }
 
 .header-help {
   display: none; }
@@ -289,22 +343,18 @@ section#home-ofertacap, section#home-equipo  {
   cursor: pointer;
   overflow: hidden; }
   .home-ofertacap-item img {
-    width: 80px !important;
-    height: 80px !important;
-    display: inline-block;
-    float: left; }
+    display: inline-block; }
   .home-ofertacap-item h4 {
-    height: 80px;
     display: block;
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
     line-height: 22px;
-    margin: 0 0 24px 0; }
+    margin: 0 0 24px 0;
+    padding: 15px 0; }
     .home-ofertacap-item h4 a {
       display: inline-block;
-      max-width: 110px;
       position: relative;
       top: 25%; }
   .home-ofertacap-item p {
@@ -350,9 +400,7 @@ section#home-ofertacap, section#home-equipo  {
     width: 240px !important;
     height: 240px !important;
     position: relative;
-    float: none; }
-  .home-ofertacap-item h4 {
-    height: 80px; } }
+    float: none; } }
 /* --------  EQUIPO CAPACITADORES  -------- */
 #home-equipo-carousel {
   width: 230px;

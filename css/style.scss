@@ -35,7 +35,6 @@ $celeste3: #268d84;
 	transition: all 0.3s ease-in-out;
 }
 
-
 body {
 	border-top: 4px solid $naranjaoscuro1;
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
@@ -120,6 +119,68 @@ header {
 	input:focus, input:active {
 		background-color: #ffebdc;
 	}
+}
+
+
+.header-login.logged {
+	padding-bottom: 15px;
+}
+
+.header-login-profile, .header-login-info {
+	float: left;
+	display: inline-block;
+}
+
+.header-login-profile {
+	margin: 0 15px;
+}
+
+.login-user p {
+	font-size: 1.1em !important;
+	font-weight: 600 !important;
+	color: white !important;
+}
+
+.login-controls {
+	text-align: left;
+
+	a {
+		margin-right: 5px;
+	}
+}
+
+.login-notifications {
+	display: inline-block;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: white;
+	padding: 3px 9px;
+	background-color: $naranjaoscuro1;
+	border-radius: 20px;
+}
+
+.login-notifications:hover {
+	background-color: $naranjaoscuro2;
+}
+
+.login-control {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	font-size: 1.1em;
+	background-color: white;
+	color: $naranja1;
+	text-align: center;
+	line-height: 26px;
+	@include transitionall02;
+}
+
+.login-control:hover {
+	background-color: $naranjaoscuro1;
+	color: white;
+	text-align: center;
+	line-height: 26px;
 }
 
 .header-help {
@@ -399,25 +460,21 @@ section#home-ofertacap, section#home-equipo {
 	
 
 	img {
-		width: 80px !important;
-		height: 80px !important;
 		display: inline-block;
-		float: left;
 	}
 
 	h4 {
-		height: 80px;
 		display: block;
 		text-align: center;
 		text-transform: uppercase;
-		font-size: 1.3em;
+		font-size: 1.2em;
 		font-weight: bold;
 		line-height: 22px;
-		margin: 0 0 24px 0; 
+		margin: 0 0 24px 0;
+		padding: 15px 0;
 
 		a {
 			display: inline-block;
-			max-width: 110px;
 			position: relative;
 			top: 25%;
 		}
@@ -483,10 +540,6 @@ section#home-ofertacap, section#home-equipo {
 			height: 240px !important;
 			position: relative;
 			float: none;
-		}
-
-		h4 {
-			height: 80px;
 		}
 	}
 }
