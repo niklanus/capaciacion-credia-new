@@ -840,11 +840,12 @@ footer {
 	}
 
 	.col1 {
-		min-width: 190px;
+		width: 15%;
 		background-color: rgba(255,255,255,0.3);
 	}
 
 	.col2 {
+		width: 55%;
 		font-size: 1.1em;
 		line-height: 1.4em;
 		padding: 30px;
@@ -861,7 +862,7 @@ footer {
 	}
 
 	.col3 {
-		min-width: 160px;
+		width: 30%;
 		text-align: center;
 		position: relative;
 		padding: 16px 30px 0 30px;
@@ -872,6 +873,10 @@ footer {
 	.ofertacap-curso {
 		display: block;
 		padding-bottom: 25px;
+
+		.col1, .col2, .col3 {
+			width: auto;
+		}
 
 		.col2, .col3 {
 			display: block;
@@ -1374,7 +1379,7 @@ section#contacto {
 .capacitador-mail {
 	display: block;
 	background-color: $celeste2;
-	padding: 12px 20px;
+	padding: 12px 0;
 	font-size: 1.1em;
 	margin-bottom: 30px;
 	@include transitionall02;
