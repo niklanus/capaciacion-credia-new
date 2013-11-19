@@ -1560,9 +1560,41 @@ td.fil-tabla-nombre {
 	width: 150px;
 }
 
+@media only screen and (max-width: 979px) {
+	.fil-tabla-nombre {
+		min-width: 150px;
+	}
+}
 
+@media only screen and (max-width: 767px) {
+	.fil-tabla-foto {
+		display: none;
+	}
 
+	.fil-tabla-nombre, .fil-tabla-region {
+		min-width: 0px;
+	}
+}
 
+@media only screen and (max-width: 560px) {
+	.filiales-tabla-container th {
+		font-size: 1.1em;
+	}
+
+	.fil-tabla-descripcion {
+		font-size: 0.9em;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.fil-tabla-nombre, .fil-tabla-region {
+		font-size: 0.9em;
+	}
+
+	.filiales-tabla-container {
+		padding: 0;
+	}
+}
 
 
 
