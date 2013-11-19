@@ -1489,6 +1489,92 @@ section#contacto {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------  PÁGINA: LISTADO DE FILIALES  -------- */
+
+#filiales h3 {
+	color: $naranja1;
+}
+
+.filiales-mapa-container {
+	iframe {
+		width: 100%;
+		height: 350px;
+		border: 0;
+		margin: 25px 0 35px 0;
+	}
+}
+
+.filiales-tabla-container {
+	margin-top: 35px;
+
+	th {
+		font-weight: 600;
+		text-transform: uppercase;
+		font-size: 1.2em;
+		color: #858585;
+		padding-bottom: 20px;
+	}
+}
+
+.fil-tabla-nombre {
+	min-width: 240px;
+}
+
+td.fil-tabla-nombre {
+	font-weight: 700;
+
+	a {
+		color: $naranja1;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+}
+
+.fil-tabla-region {
+	min-width: 130px;
+}
+
+.fil-tabla-foto {
+	width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------------------------------- */
 /* ------ SISTEMA SOLICITUD DE CURSOS ------ */
 /* ----------------------------------------- */
