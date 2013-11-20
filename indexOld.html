@@ -78,11 +78,8 @@
 				<div class="span4">
 					<a href="" class="home-capacitadores-ubicacion-bloque"><i class="icon_group"></i><p><br>Equipo de capacitadores</p></a>
 				</div>
-				<div class="span4">
+				<div class="span8">
 					<a href="" class="home-capacitadores-ubicacion-bloque"><i class="icon_pin"></i><p><br>Buscá tu centro de capacitación</p></a>
-				</div>
-				<div class="span4">
-					<a class="home-capacitadores-ubicacion-bloque" id="trabajo-popover" data-toggle="popover" data-placement="top" data-content='<a class="btn btn-popover">Como capacitador</a> <a class="btn btn-popover">En el departamento</a>' title="" data-original-title="¿De qué querés trabajar?"><i class="icon_id-2_alt"></i><p><br>¿Querés trabajar con nosotros?</p></a>
 				</div>
 
 			</div>
@@ -150,15 +147,67 @@
 			</div>
 
 		</div> <!-- TERMINA .container -->
-	</section>
+	</section> 
 
-
+	
 	<section id="home-equipo">
 		<div class="container">
-			<h2>Descargas</h2> 
-			<div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, nisi dignissimos itaque sit voluptatum voluptatem voluptatibus cupiditate incidunt assumenda facere vitae animi! Libero consequuntur dolorum non quae consequatur expedita a! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, velit, voluptas, adipisci accusantium inventore modi accusamus excepturi incidunt omnis quibusdam illo itaque minus unde tenetur dolorum perspiciatis nihil veritatis aliquam!</p>
-			</div>
+			<h2>Equipo de capacitadores</h2>
+
+			<div id="home-equipo-carousel" class="everslider">  
+			    <ul class="es-slides">  
+
+			        <li>
+			        	<div class="home-equipo">
+			        		<img src="img/cap1.jpg" alt="Manuel Ausejo">
+			        		<div><p>Chef Manuel Ausejo</p></div>
+			        	</div>
+			    	</li>
+					<li>
+						<div class="home-equipo">
+			        		<img src="img/cap2.jpg" alt="Chef Rosi Baiardi">
+			        		<div><p>Chef Rosi Baiardi</p></div>
+			        	</div>
+			        </li>
+					<li>
+						<div class="home-equipo">
+			        		<img src="img/cap3.jpg" alt="Andrés Moritán">
+			        		<div><p>Andrés Moritán</p></div>
+			        	</div>
+					</li>
+					<li>
+						<div class="home-equipo">
+			        		<img src="img/cap4.jpg" alt="Lic. Otilia Kusmin">
+			        		<div><p>Lic. Otilia Kusmin</p></div>
+			        	</div>
+					</li>
+
+			        <li>
+			        	<div class="home-equipo">
+			        		<img src="img/cap1.jpg" alt="Manuel Ausejo">
+			        		<div><p>Chef Manuel Ausejo</p></div>
+			        	</div>
+			    	</li>
+					<li>
+						<div class="home-equipo">
+			        		<img src="img/cap2.jpg" alt="Chef Rosi Baiardi">
+			        		<div><p>Chef Rosi Baiardi</p></div>
+			        	</div>
+			        </li>
+					<li>
+						<div class="home-equipo">
+			        		<img src="img/cap3.jpg" alt="Andrés Moritán">
+			        		<div><p>Andrés Moritán</p></div>
+			        	</div>
+					</li>
+					<li>
+						<div class="home-equipo">
+			        		<img src="img/cap4.jpg" alt="Lic. Otilia Kusmin">
+			        		<div><p>Lic. Otilia Kusmin</p></div>
+			        	</div>
+					</li>
+			    </ul>  
+			</div>  
 
 		</div>
 	</section> 
@@ -220,11 +269,17 @@
 	            itemWidth: 320,
 	            swipeThreshold: 70
 	            //swipePage: true
-	        });
+	        });  
+	    });
 
-	        $('#trabajo-popover').popover({
-	        	html: true
-	        });
+
+		$(document).ready(function(){  
+	        $('#home-equipo-carousel').everslider({  
+	            mode: 'carousel',  
+	            moveSlides: 'auto',
+	            itemWidth: 230,
+	            itemHeight: 300
+	        });  
 	    });
 	</script>
 

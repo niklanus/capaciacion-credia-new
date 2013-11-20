@@ -276,6 +276,13 @@ section#home-ofertacap, section#home-equipo, section#home-noticias {
 section#home-ofertacap, section#home-equipo  {
   background-color: #ffefde; }
 
+.popover-title {
+  background-color: #ff8d3a !important; }
+
+.btn-popover {
+  display: block;
+  margin-bottom: 5px; }
+
 /* --------  OFERTA CAPACITACIÓN  -------- */
 .verde, .rojo, .azul {
   color: white; }
