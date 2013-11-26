@@ -581,7 +581,7 @@ footer {
   margin: 0 auto; }
 
 .thumbnail img {
-  padding-top: 30px;
+  padding-top: 0;
   padding-bottom: 15px; }
 .thumbnail h3, .thumbnail p {
   padding: 0 30px; }
