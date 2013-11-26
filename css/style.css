@@ -273,6 +273,9 @@ section#home-ofertacap, section#home-equipo, section#home-noticias {
   margin: 20px 0;
   padding: 12px 0; }
 
+section#home-noticias {
+  padding-top: 0; }
+
 section#home-ofertacap, section#home-equipo  {
   background-color: #ffefde; }
 
