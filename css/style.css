@@ -318,6 +318,9 @@ section#home-ofertacap, section#home-equipo  {
   .ofertacap-etiqueta {
     padding: 7px 14px;
     font-size: 0.85em; } }
+#home-ofertacap-carousel {
+  margin: 0 auto !important; }
+
 /*
 .home-ofertacap-containeritems {
 	width: 100%;
@@ -566,6 +569,39 @@ footer {
 
   .texto-fehgra {
     padding: 0 20px; } }
+/* --------  DESCARGAS  -------- */
+/*
+.thumbnail {
+	margin: 0 30px;
+}*/
+.thumbnail img {
+  padding-top: 30px;
+  padding-bottom: 15px; }
+.thumbnail h3, .thumbnail p {
+  padding: 0 30px; }
+.thumbnail h3 {
+  line-height: 32px;
+  margin-bottom: 15px; }
+
+.descargas-boton {
+  display: block;
+  background-color: #ff8d3a;
+  padding: 11px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 16px 30px 10px 30px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+.descargas-boton:hover {
+  background-color: #f06c18; }
+
+@media only screen and (max-width: 1199px) {
+  .thumbnail img {
+    padding-top: 0px; } }
 /* --------  PÁGINA: OFERTA DE CAPACITACIÓN  -------- */
 .container {
   position: relative; }

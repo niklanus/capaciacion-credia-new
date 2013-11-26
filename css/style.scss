@@ -434,6 +434,10 @@ section#home-ofertacap, section#home-equipo {
 	}
 }
 
+#home-ofertacap-carousel {
+	margin: 0 auto !important;
+}
+
 /*
 .home-ofertacap-containeritems {
 	width: 100%;
@@ -762,6 +766,52 @@ footer {
 
 
 
+/* --------  DESCARGAS  -------- */
+
+/*
+.thumbnail {
+	margin: 0 30px;
+}*/
+
+.thumbnail {
+	img {
+		padding-top: 30px;
+		padding-bottom: 15px;
+	}
+
+	h3, p {
+		padding: 0 30px;
+	}
+
+	h3 {
+		line-height: 32px;
+		margin-bottom: 15px;
+	}
+}
+
+.descargas-boton {
+	display: block;
+	background-color: $naranja1;
+	padding: 11px 20px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin: 16px 30px 10px 30px;
+	@include transitionall02;
+}
+
+.descargas-boton:hover {
+	background-color: $naranjaoscuro1;
+}
+
+
+@media only screen and (max-width: 1199px) {
+	.thumbnail {
+		img {
+			padding-top: 0px;
+		}
+	}
+}
 
 
 
