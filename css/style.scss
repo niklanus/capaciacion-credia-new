@@ -2145,3 +2145,91 @@ td.fil-tabla-nombre {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------  PÁGINA: TRABAJAR CON NOSTOROS  -------- */
+
+.trabajar-form {
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+	padding-top: 10px;
+
+	.input-prepend {
+		display: block;
+	}
+
+	input {
+		width: 458px;
+	}
+
+	input[type="submit"] {
+		width: 100%;
+	}
+
+	textarea {
+		width: 485px;
+	}
+
+	label {
+		font-weight: 600;
+		margin-top: 25px;
+
+		i {
+			font-size: 0.9em;
+			font-weight: 400;
+		}
+	}
+}
+
+.trabajar-infocv {
+	font-size: 0.85em;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+	.trabajar-form {
+		input { width: 87%; }
+
+		textarea { width: 96%; }
+	}
+}

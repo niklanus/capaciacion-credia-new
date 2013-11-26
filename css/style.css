@@ -1379,3 +1379,35 @@ td.fil-tabla-nombre {
   border-radius: 6px;
   border: 1px solid #C5C5C5;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); }
+
+/* --------  PÁGINA: TRABAJAR CON NOSTOROS  -------- */
+.trabajar-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 10px; }
+  .trabajar-form .input-prepend {
+    display: block; }
+  .trabajar-form input {
+    width: 458px; }
+  .trabajar-form input[type="submit"] {
+    width: 100%; }
+  .trabajar-form textarea {
+    width: 485px; }
+  .trabajar-form label {
+    font-weight: 600;
+    margin-top: 25px; }
+    .trabajar-form label i {
+      font-size: 0.9em;
+      font-weight: 400; }
+
+.trabajar-infocv {
+  font-size: 0.85em;
+  font-style: italic;
+  margin-bottom: 10px; }
+
+@media only screen and (max-width: 550px) {
+  .trabajar-form input {
+    width: 87%; }
+  .trabajar-form textarea {
+    width: 96%; } }
