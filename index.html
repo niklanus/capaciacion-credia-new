@@ -157,33 +157,43 @@
 		<div class="container">
 			<h2>Descargas</h2> 
 			
-			<ul class="thumbnails">
-				<li class="span4">
-					<div class="thumbnail">
-						<img src="img/thumbIngles.jpg" alt="">
-						<h3>English for specific purposes</h3>
-						<p>Módulo de inglés para hotelería y gastronomía.</p>
-						<a href="" class="descargas-boton">Descargar ahora</a>
-					</div>
-				</li>
-				<li class="span4">
-					<div class="thumbnail">
-						<img src="img/thumbPortugues.jpg" alt="">
-						<h3>Português para fins específicos</h3>
-						<p>Português orientado a Hotelaria e Gastronomia.</p>
-						<a href="" class="descargas-boton">Descargar ahora</a>
-					</div>
-				</li>
-				<li class="span4">
-					<div class="thumbnail">
-						<img src="img/thumbMenu.jpg" alt="">
-						<h3>Ingeniería de Menú <br></h3>
-						<p>Herramienta para aumentar la rentabilidad del negocio gastronómico.</p>
-						<a href="" class="descargas-boton">Descargar ahora</a>
-					</div>
-				</li>
-			</ul>
+			<div id="home-descargas-carousel" class="everslider">
+				<ul class="es-slides">
+					<li>
+						<div class="inner-slide">
+							<div class="thumbnail">
+								<img src="img/thumbIngles.jpg" alt="">
+								<h3>English for specific purposes</h3>
+								<p>Módulo de inglés para hotelería y gastronomía.</p>
+								<a href="" class="descargas-boton">Descargar ahora</a>
+							</div>
+						</div>
+					</li>
 
+					<li>
+						<div class="inner-slide">
+							<div class="thumbnail">
+								<img src="img/thumbPortugues.jpg" alt="">
+								<h3>Português para fins específicos</h3>
+								<p>Português orientado a Hotelaria e Gastronomia.</p>
+								<a href="" class="descargas-boton">Descargar ahora</a>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="inner-slide">
+							<div class="thumbnail">
+								<img src="img/thumbMenu.jpg" alt="">
+								<h3>Ingeniería de Menú</h3>
+								<p>Herramienta para aumentar la rentabilidad del negocio gastronómico.</p>
+								<a href="" class="descargas-boton">Descargar ahora</a>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
 		</div>
 	</section> 
 
@@ -244,6 +254,16 @@
 	            itemWidth: 320,
 	            swipeThreshold: 70,
 	            maxWidth: 990
+	            //swipePage: true
+	        });
+
+	        $('#home-descargas-carousel').everslider({  
+	            mode: 'carousel',  
+	            moveSlides: 'auto',
+	            maxWidth: 962,
+	            itemWidth: 320,
+	            itemHeight: 600,
+	            swipeThreshold: 70
 	            //swipePage: true
 	        });
 

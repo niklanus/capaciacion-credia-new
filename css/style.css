@@ -574,6 +574,9 @@ footer {
 .thumbnail {
 	margin: 0 30px;
 }*/
+#home-descargas-carousel {
+  margin: 0 auto; }
+
 .thumbnail img {
   padding-top: 30px;
   padding-bottom: 15px; }
