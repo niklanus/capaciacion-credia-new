@@ -759,6 +759,33 @@ footer {
 .oculta {
   display: none; }
 
+.ofertacap-listacap {
+  list-style: none;
+  padding-bottom: 20px !important; }
+  .ofertacap-listacap h4 {
+    padding-bottom: 8px; }
+  .ofertacap-listacap li {
+    display: inline-block;
+    padding-bottom: 4px !important; }
+    .ofertacap-listacap li a {
+      display: inline-block;
+      text-transform: uppercase;
+      background-color: rgba(0, 0, 0, 0.1);
+      margin: 0;
+      padding: 16px 25px 16px 25px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+    .ofertacap-listacap li a:hover {
+      background-color: rgba(0, 0, 0, 0.2); }
+
+@media only screen and (max-width: 500px) {
+  .ofertacap-listacap li {
+    display: block;
+    width: 100%; }
+    .ofertacap-listacap li a {
+      display: block; } }
 /* --------  PÁGINA: SOBRE EL DEPARTAMENTO  -------- */
 .sobre-caption {
   position: absolute;

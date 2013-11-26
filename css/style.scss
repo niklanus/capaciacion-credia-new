@@ -1069,10 +1069,45 @@ footer {
 	display: none;
 }
 
+.ofertacap-listacap {
+	list-style: none;
+	padding-bottom: 20px !important;
 
+	h4 {
+		padding-bottom: 8px;
+	}
 
+	li {
+		display: inline-block;
+		padding-bottom: 4px !important;
 
+		a {
+			display: inline-block;
+			text-transform: uppercase;
+			background-color: rgba(0,0,0,0.1);
+			margin: 0;
+			padding: 16px 25px 16px 25px;
+			@include transitionall02;
+		}
 
+		a:hover {
+			background-color: rgba(0,0,0,0.2);
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.ofertacap-listacap {
+		li {
+			display: block;
+			width: 100%;
+
+			a {
+				display: block;
+			}
+		}
+	}
+}
 
 
 
